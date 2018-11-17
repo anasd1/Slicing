@@ -1,0 +1,307 @@
+body {
+    margin: 0;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 150px 150px auto 150px 150px;
+    grid-template-rows: 80px 200px 80px;
+    grid-template-areas: "a b c d e" "a f f f e" "a g g g e";
+    grid-gap: 10px;
+    background-color: #232330;
+    padding: 10px;
+}
+
+.demos {
+    display: grid;
+    grid-template-columns: auto 300px 300px 300px auto;
+    grid-template-rows: 200px 200px 40px 200px 40px 40px;
+    grid-template-areas: "a a a a a" "b d e f c" "b g h i c" "b j k l c" "b m n o c" "p p p p p";
+    grid-gap: 5px 25px;
+    background-color: white;
+    padding: 10px;
+    align-content: space-between;
+}
+
+.btn {
+    display: grid;
+    grid-template-columns: auto 300px 300px 300px auto;
+    grid-template-rows: 200px auto;
+    grid-template-areas: "a b b c d" "e e e e e";
+    grid-gap: 10px 25px;
+    background-color: #232330;
+    padding: 10px 0px 0px 0px;
+    align-content: space-between;
+}
+
+.footer {
+    grid-area: e;
+    display: grid;
+    grid-template-columns: auto 300px 300px 300px auto;
+    grid-template-rows: 30px;
+    grid-template-areas: "a b c d e";
+    grid-gap: 0 25px;
+    background-color: white;
+    padding: 20px;
+}
+
+.brand {
+    grid-area: b;
+    padding: 50px 0 10px 10px;
+}
+
+.menu {
+    grid-area: d;
+    padding: 50px 0 10px 20px;
+}
+
+.title {
+    padding-top: 80px;
+    text-align: center;
+    grid-area: f;
+    font-size: 48px;
+    letter-spacing: 0px;
+    line-height: 28px;
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-weight: 800;
+}
+
+.demos-top {
+    padding-top: 75px;
+    grid-area: a;
+    text-align: center;
+    font-size: 36px;
+    letter-spacing: 0px;
+    line-height: 28px;
+    color: #232330;
+    font-family: "Montserrat";
+    font-weight: 900;
+}
+
+.fheader {
+    grid-area: b;
+    text-align: left;
+    padding-top: 60px;
+    padding-left: 0;
+    font-size: 36px;
+    letter-spacing: 0px;
+    line-height: 28px;
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-weight: 800;
+}
+
+.fheader1 {
+    grid-area: c;
+    text-align: center;
+    padding-top: 80px;
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 28px;
+    color: #ffffff;
+    font-family: "Open Sans";
+}
+
+.footer {
+    grid-area: e;
+    background-color: #ffffff;
+}
+
+.footerleft {
+    grid-area: b;
+}
+
+.footercenter {
+    grid-area: c;
+    text-align: center;
+}
+
+.footerright {
+    grid-area: d;
+    font-size: 12px;
+    letter-spacing: 0px;
+    line-height: 28px;
+    color: #7b7b83;
+    font-family: "Open Sans";
+    text-align: right;
+}
+
+span#dem1 {
+    font-size: 36px;
+    letter-spacing: 0px;
+    line-height: 28px;
+    color: #232330;
+    font-family: "Montserrat";
+    font-weight: 800;
+    background: linear-gradient(-20deg, #ff5e49 0%, #ff961f 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+span#getmore {
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 28px;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-weight: 400;
+}
+
+span#dem {
+    font-size: 36px;
+    letter-spacing: 0px;
+    line-height: 28px;
+    color: #232330;
+    font-family: "Montserrat";
+    font-weight: 800;
+    background: linear-gradient(-20deg, #ff5e49 0%, #ff961f 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+span#tag {
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 28px;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-weight: 400;
+}
+
+span#cta {
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 28px;
+    color: #000000;
+    font-family: "Open Sans";
+    font-weight: bold;
+    background: linear-gradient(-20deg, #ff5e49 0%, #f3c053 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+span#buynow {
+    margin-left: 20px;
+}
+
+span#showcase {
+    color: #ff961f;
+}
+
+span#copyright {
+    color: #ff961f;
+}
+
+span#undershowcase {
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 28px;
+    color: #7b7b83;
+    font-family: "Open Sans";
+    font-weight: 500;
+}
+
+button.buynow {
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 28px;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-weight: bold;
+    background-image: linear-gradient(-20deg, #ff5e49 0%, #f3a853 100%);
+    border: none;
+    border-radius: 25px;
+    padding: 10px 30px;
+}
+
+button#purchasenow {
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 28px;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-weight: bold;
+    width: 203px;
+    height: 52px;
+    box-shadow: 0 0 20px rgba(35, 35, 48, 0.1);
+    background-image: linear-gradient(-20deg, #ff5e49 0%, #ff961f 100%);
+    margin-right: 20px;
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 28px;
+    font-family: "Open Sans";
+    font-weight: bold;
+}
+
+a#oren {
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 28px;
+    color: #ff961f;
+    font-family: "Open Sans";
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+a#about {
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 28px;
+    color: #232330;
+    font-family: "Open Sans";
+}
+
+a#contact {
+    color: #000000;
+    margin-right: 20px;
+    margin-left: 15px;
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 28px;
+    color: #232330;
+    font-family: "Open Sans";
+}
+
+a#support {
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 28px;
+    color: #232330;
+    font-family: "Open Sans";
+}
+
+button #purchasenow:hover {
+    box-shadow: 0 3px 4px 0 rgba(255, 255, 255, 0.24), 0 17px 50px 0 rgb(255, 255, 255, 0.24);
+}
+
+button .buynow:hover {
+    box-shadow: 0 1px 1px 0 rgba(255, 255, 255, 0.12), 0 17px 50px 0 rgb(255, 255, 255, 0.24);
+}
+
+a:hover {
+    color: #ff961f;
+}
+
+a#about:hover {
+    color: #ff961f;
+    cursor: pointer;
+}
+
+a#support:hover {
+    color: #ff961f;
+    cursor: pointer;
+}
+
+a#contact:hover {
+    color: #ff961f;
+    cursor: pointer;
+}
