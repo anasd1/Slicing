@@ -23,7 +23,7 @@ body {
     align-content: space-between;
 }
 
-.btn {
+.bottom {
     display: grid;
     grid-template-columns: auto 300px 300px 300px auto;
     grid-template-rows: 200px auto;
@@ -45,7 +45,7 @@ body {
     padding: 20px;
 }
 
-.brand {
+.logo {
     grid-area: b;
     padding: 50px 0 10px 10px;
 }
@@ -55,7 +55,7 @@ body {
     padding: 50px 0 10px 20px;
 }
 
-.title {
+.hero {
     padding-top: 80px;
     text-align: center;
     grid-area: f;
@@ -79,6 +79,18 @@ body {
     font-weight: 900;
 }
 
+.box-first,
+.box-second,
+.box-third,
+.box-seventh,
+.box-eigth {
+    background-image: url("thumbnail3.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 250px;
+    background-color: #232330;
+}
+
 .overlay-effect {
     position: absolute;
     padding: 86px 102px;
@@ -93,7 +105,102 @@ body {
     font-weight: bold;
 }
 
-.fheader {
+.soon {
+    position: absolute;
+    padding: 86px 85px;
+    opacity: 1;
+    transition: .5s ease;
+    background-color: #e9e9ea;
+    font-size: 48px;
+    letter-spacing: 1px;
+    line-height: 28px;
+    color: #bdbdc0;
+    font-family: "Montserrat";
+    font-weight: bold;
+    text-align: center;
+}
+
+.box-first:hover .overlay-effect,
+.box-second:hover .overlay-effect,
+.box-third:hover .overlay-effect,
+.box-seventh:hover .overlay-effect,
+.box-eigth:hover .overlay-effect {
+    opacity: 0.9;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.box-fourth,
+.box-fifth,
+.box-sixth,
+.box-tenth,
+.box-eleventh,
+.box-twelveth {
+    background-color: white;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 28px;
+    color: #232330;
+    font-family: "Open Sans";
+    font-weight: bold;
+}
+
+.box-first {
+    grid-area: d;
+    background-image: url(image/produk.png);
+}
+
+.box-second {
+    grid-area: e;
+    background-image: url(image/produk.png);
+}
+
+.box-third {
+    grid-area: f;
+    background-image: url(image/produk.png);
+}
+
+.box-fourth {
+    grid-area: g;
+}
+
+.box-fifth {
+    grid-area: h;
+}
+
+.box-sixth {
+    grid-area: i;
+}
+
+.box-seventh {
+    grid-area: j;
+    background-image: url(image/produk.png);
+}
+
+.box-eigth {
+    grid-area: k;
+    background-image: url(image/produk.png);
+}
+
+.box-nineth {
+    grid-area: l;
+}
+
+.box-tenth {
+    grid-area: m;
+}
+
+.box-eleventh {
+    grid-area: n;
+}
+
+.box-twelveth {
+    grid-area: o;
+}
+
+.cta {
     grid-area: b;
     text-align: left;
     padding-top: 60px;
@@ -106,7 +213,7 @@ body {
     font-weight: 800;
 }
 
-.fheader1 {
+.ctaright {
     grid-area: c;
     text-align: center;
     padding-top: 80px;
@@ -141,7 +248,7 @@ body {
     text-align: right;
 }
 
-span#dem1 {
+span#dem2 {
     font-size: 36px;
     letter-spacing: 0px;
     line-height: 28px;
@@ -183,7 +290,7 @@ span#tag {
     font-weight: 400;
 }
 
-span#cta {
+span#explore {
     font-size: 16px;
     letter-spacing: 0px;
     line-height: 28px;
@@ -203,7 +310,7 @@ span#showcase {
     color: #ff961f;
 }
 
-span#copyright {
+span#coddice {
     color: #ff961f;
 }
 
@@ -254,7 +361,7 @@ a {
     font-weight: bold;
 }
 
-a#oren {
+a#orange {
     font-size: 16px;
     letter-spacing: 0px;
     line-height: 28px;
@@ -305,17 +412,17 @@ a:hover {
     color: #ff961f;
 }
 
-a#about:hover {
-    color: #ff961f;
-    cursor: pointer;
-}
-
 a#support:hover {
     color: #ff961f;
     cursor: pointer;
 }
 
 a#contact:hover {
+    color: #ff961f;
+    cursor: pointer;
+}
+
+a#about:hover {
     color: #ff961f;
     cursor: pointer;
 }
